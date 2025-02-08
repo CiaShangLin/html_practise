@@ -1,0 +1,101 @@
+/* 版心 */
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+
+/* 頂部導航條 */
+.topbar {
+    background-color: #ECECEC;
+    height: 30px;
+}
+
+.topbar-welcome {
+    height: 30px;
+    line-height: 30px;
+    /* 消除span和a預設空白 */
+    font-size: 0;
+    color: #666666
+}
+
+.topbar-welcome span,
+a {
+    font-size: 12px;
+}
+
+.topbar-welcome .hello {
+    margin-right: 28px;
+}
+
+.topbar-welcome .login {
+    padding-right: 10px;
+    border-right: 1px solid #666666;
+}
+
+.topbar-welcome .register {
+    padding-left: 10px;
+}
+
+.topbar-nav {}
+
+.topbar-nav .list {
+    line-height: 30px;
+    height: 30px;
+}
+
+.topbar-nav .list li {
+    float: left;
+
+}
+
+.topbar-nav .list li a {
+    padding: 0px 15px;
+    border-right: 1px solid #666666;
+}
+
+.topbar-nav .list li:first-child a {
+    padding-left: 0px;
+}
+
+.topbar-nav .list li:last-child a {
+    padding-right: 0px;
+    border-right: 0;
+}
+
+/* 頂部導航條 */
+
+/* 頭部 */
+.header {
+    height: 120px;
+}
+
+.header .logo img {
+    height: 120px;
+    width: 190px;
+}
+
+.header .search form {
+    margin-top: 42px;
+    /* 處理input跟button空白問題 */
+    font-size: 0;
+}
+
+.header .search input {
+    height: 34px;
+    width: 508px;
+    border: 1px solid #DD302D;
+}
+
+.header .search button {
+    height: 36px;
+    width: 80px;
+    background-color: #DD302D;
+    /* 兩個都midden也可以 */
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/search_icon.png);
+}
+
+/* 頭部 */
