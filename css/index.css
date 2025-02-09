@@ -46,7 +46,6 @@ a {
 
 .topbar-nav .list li {
     float: left;
-
 }
 
 .topbar-nav .list li a {
@@ -99,3 +98,77 @@ a {
 }
 
 /* 頭部 */
+
+/* 主導航 */
+.main-nav {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #DD302D;
+}
+
+.main-nav .all-type {
+    width: 190px;
+    height: 48px;
+    background-color: #DD302D;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.main-nav li {
+    float: left;
+    color: black;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 主導航 */
+
+/* 主內容區 */
+
+.main-content {
+    margin-top: 10px;
+}
+
+.main-content .side-nav {
+    height: 458px;
+    width: 190px;
+    background-color: #F4F4F4;
+    margin-right: 10px;
+}
+
+.main-content .side-nav li:first-child{
+    margin-top: 5px;
+}
+.main-content .side-nav li a {
+    margin-left: 16px;
+    /* 用margin or padding也可以 */
+    line-height: 28px;
+    color: #333333;
+    font-size: 14px;
+}
+.main-content .side-nav li:hover {
+    background-color: #DD302D;
+}
+
+.main-content .side-nav li:hover a {
+    color: white;
+}
+
+.main-content .banner {
+    height: 458px;
+    width: 690px;
+    background-color: #F4F4F4;
+    margin-right: 10px;
+}
+
+.main-content .side-other {
+    height: 458px;
+    width: 290px;
+    background-color: #F4F4F4;
+}
+
+
+/* 主內容區 */
