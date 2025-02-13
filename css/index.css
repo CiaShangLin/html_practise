@@ -137,23 +137,72 @@ a {
     width: 190px;
     background-color: #F4F4F4;
     margin-right: 10px;
+    /* 相對於爺爺 */
+    position: relative;
 }
 
-.main-content .side-nav li:first-child{
-    margin-top: 5px;
+.main-content .second-menu {
+    background-color: white;
+    position: absolute;
+    width: 700px;
+    height: 458px;
+    top: 0;
+    left: 190px;
+    /* 預設不出現 */
+    display: none;
 }
-.main-content .side-nav li a {
+
+.main-content .second-menu dl{
+    height: 36px;
+    line-height: 36px;
+    margin-left: 20px;
+}
+
+.main-content .second-menu dl:first-child{
+    margin-top: 10px;
+}
+
+.main-content .second-menu dt{
+    float: left;
+    width: 70px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.main-content .second-menu dd{
+    float: left;
+}
+/* 觸發的層級要抓得比較系有點煩 */
+.main-content .second-menu dd a{
+    padding: 0px 10px;
+    border-left: 1px solid #666666;
+}
+
+
+
+.main-content .side-nav li>a {
     margin-left: 16px;
     /* 用margin or padding也可以 */
     line-height: 28px;
-    color: #333333;
+    color: #333333 ;
     font-size: 14px;
 }
+
+.main-content .side-nav li:first-child {
+    margin-top: 5px;
+}
+
 .main-content .side-nav li:hover {
     background-color: #DD302D;
 }
 
-.main-content .side-nav li:hover a {
+.main-content .side-nav li:hover .second-menu {
+    display: block;
+}
+
+
+/* 用子代選擇器，不然連二級菜單都會變化 */
+.main-content .side-nav li:hover>a {
     color: white;
 }
 
@@ -169,6 +218,7 @@ a {
     width: 290px;
     background-color: #F4F4F4;
 }
+
 
 
 /* 主內容區 */
