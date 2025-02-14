@@ -142,7 +142,7 @@ a {
 }
 
 .main-content .second-menu {
-    background-color: #E3E3E3 ;
+    background-color: #E3E3E3;
     position: absolute;
     width: 700px;
     height: 458px;
@@ -152,28 +152,29 @@ a {
     display: none;
 }
 
-.main-content .second-menu dl{
+.main-content .second-menu dl {
     height: 36px;
     line-height: 36px;
     margin-left: 20px;
 }
 
-.main-content .second-menu dl:first-child{
+.main-content .second-menu dl:first-child {
     margin-top: 10px;
 }
 
-.main-content .second-menu dt{
+.main-content .second-menu dt {
     float: left;
     width: 70px;
     font-weight: bold;
     margin-right: 10px;
 }
 
-.main-content .second-menu dd{
+.main-content .second-menu dd {
     float: left;
 }
+
 /* 觸發的層級要抓得比較系有點煩 */
-.main-content .second-menu dd a{
+.main-content .second-menu dd a {
     padding: 0px 10px;
     border-left: 1px solid #666666;
 }
@@ -184,7 +185,7 @@ a {
     margin-left: 16px;
     /* 用margin or padding也可以 */
     line-height: 28px;
-    color: #333333 ;
+    color: #333333;
     font-size: 14px;
 }
 
@@ -216,9 +217,132 @@ a {
 .main-content .side-other {
     height: 458px;
     width: 290px;
-    background-color: #F4F4F4;
+}
+
+.main-content .side-other .message {
+    width: 260px;
+    height: 156px;
+    border: 1px solid #D9D9D9;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.main-content .side-other .message .title {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #D9D9D9;
+
+}
+
+.main-content .side-other .message .title span {
+    font-size: 14px;
+    color: black;
+}
+
+.main-content .side-other .message .title a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.main-content .side-other .message .msg-list li {
+    /* 用line-height這個寫法還是比較接近設計稿 */
+    /* margin-bottom: 12px; */
+    line-height: 26px;
+    height: 26px;
+}
+
+/* 使用外邊距來創造行間距
+需要額外處理第一個和最後一個元素的 margin
+間距可能會因為瀏覽器的預設樣式或其他因素而產生細微差異
+在某些情況下可能會出現意外的 margin collapse 問題 */
+/* .main-content .side-other .message .msg-list li{
+    margin-bottom: 12px;
+}
+.main-content .side-other .message .msg-list li:first-child{
+    margin-top: 0;
+}
+.main-content .side-other .message .msg-list li:last-child{
+    margin-bottom: 0;
+} */
+
+.main-content .side-other .message .msg-list a {
+    font-size: 12px;
+    color: #666666;
 }
 
 
+.main-content .side-other .other-nav {
+    width: 290px;
+    height: 290px;
+    margin-top: 10px;
+    /* 避免margin塌陷 */
+    overflow: hidden;
+}
+
+.other-nav .other-nav-list:first-child {
+    margin-top: 16px;
+}
+/* 第二個上下17px */
+.other-nav .other-nav-list:nth-child(2) {
+    margin: 17px 0px;
+}
+
+.other-nav-list li {
+    width: 48px;
+    height: 70px;
+    float: left;
+    margin: 0px 11px;
+    text-align: center;
+}
+
+.other-nav-list li:first-child {
+    margin-left: 16px;
+}
+
+.other-nav-list .picture{
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/精灵图-侧边功能.png);
+}
+
+.other-nav-list:nth-child(1) li:nth-child(1) .picture{
+    background-position: 0px 0px;
+}
+.other-nav-list:nth-child(1) li:nth-child(2) .picture{
+    background-position: -48px 0px;
+}
+.other-nav-list:nth-child(1) li:nth-child(3) .picture{
+    background-position: -96px 0px;
+}
+.other-nav-list:nth-child(1) li:nth-child(4) .picture{
+    background-position: -144px 0px;
+}
+
+.other-nav-list:nth-child(2) li:nth-child(1) .picture{
+    background-position: 0px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(2) .picture{
+    background-position: -48px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(3) .picture{
+    background-position: -96px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(4) .picture{
+    background-position: -144px -48px;
+}
+
+
+.other-nav-list:nth-child(3) li:nth-child(1) .picture{
+    background-position: 0px -96px 
+}
+.other-nav-list:nth-child(3) li:nth-child(2) .picture{
+    background-position: -48px -96px 
+}
+.other-nav-list:nth-child(3) li:nth-child(3) .picture{
+    background-position: -96px -96px 
+}
+.other-nav-list:nth-child(3) li:nth-child(4) .picture{
+    background-position: -144px -96px 
+}
 
 /* 主內容區 */
