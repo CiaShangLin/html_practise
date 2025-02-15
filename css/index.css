@@ -282,6 +282,7 @@ a {
 .other-nav .other-nav-list:first-child {
     margin-top: 16px;
 }
+
 /* 第二個上下17px */
 .other-nav .other-nav-list:nth-child(2) {
     margin: 17px 0px;
@@ -299,68 +300,151 @@ a {
     margin-left: 16px;
 }
 
-.other-nav-list .picture{
+.other-nav-list .picture {
     width: 48px;
     height: 48px;
     background-image: url(../images/精灵图-侧边功能.png);
 }
 
-.other-nav-list:nth-child(1) li:nth-child(1) .picture{
+.other-nav-list:nth-child(1) li:nth-child(1) .picture {
     background-position: 0px 0px;
 }
-.other-nav-list:nth-child(1) li:nth-child(2) .picture{
+
+.other-nav-list:nth-child(1) li:nth-child(2) .picture {
     background-position: -48px 0px;
 }
-.other-nav-list:nth-child(1) li:nth-child(3) .picture{
+
+.other-nav-list:nth-child(1) li:nth-child(3) .picture {
     background-position: -96px 0px;
 }
-.other-nav-list:nth-child(1) li:nth-child(4) .picture{
+
+.other-nav-list:nth-child(1) li:nth-child(4) .picture {
     background-position: -144px 0px;
 }
 
-.other-nav-list:nth-child(2) li:nth-child(1) .picture{
+.other-nav-list:nth-child(2) li:nth-child(1) .picture {
     background-position: 0px -48px;
 }
-.other-nav-list:nth-child(2) li:nth-child(2) .picture{
+
+.other-nav-list:nth-child(2) li:nth-child(2) .picture {
     background-position: -48px -48px;
 }
-.other-nav-list:nth-child(2) li:nth-child(3) .picture{
+
+.other-nav-list:nth-child(2) li:nth-child(3) .picture {
     background-position: -96px -48px;
 }
-.other-nav-list:nth-child(2) li:nth-child(4) .picture{
+
+.other-nav-list:nth-child(2) li:nth-child(4) .picture {
     background-position: -144px -48px;
 }
 
 
-.other-nav-list:nth-child(3) li:nth-child(1) .picture{
-    background-position: 0px -96px 
+.other-nav-list:nth-child(3) li:nth-child(1) .picture {
+    background-position: 0px -96px
 }
-.other-nav-list:nth-child(3) li:nth-child(2) .picture{
-    background-position: -48px -96px 
+
+.other-nav-list:nth-child(3) li:nth-child(2) .picture {
+    background-position: -48px -96px
 }
-.other-nav-list:nth-child(3) li:nth-child(3) .picture{
-    background-position: -96px -96px 
+
+.other-nav-list:nth-child(3) li:nth-child(3) .picture {
+    background-position: -96px -96px
 }
-.other-nav-list:nth-child(3) li:nth-child(4) .picture{
-    background-position: -144px -96px 
+
+.other-nav-list:nth-child(3) li:nth-child(4) .picture {
+    background-position: -144px -96px
 }
 
 /* 主內容區 */
 
 /* 秒殺 */
 
-.seckill{
+.seckill {
     margin-top: 10px;
+    overflow: hidden;
 }
-.seckill img{
+
+.seckill img {
     float: left;
     margin-right: 11px;
     /* 鼠標變化可以點擊 */
     cursor: pointer;
 }
 
-.seckill img:last-child{
+.seckill img:last-child {
     margin-right: 0px;
 }
 
+
 /* 秒殺 */
+
+/* 樓層 */
+.floor {
+    margin-top: 48px;
+}
+
+.floor .floor-nav {
+    height: 30px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #DD302D;
+}
+
+.floor .floor-nav-list li {
+    float: left;
+    font-size: 14px;
+}
+
+.floor .floor-nav-list li a {
+    padding: 0px 10px;
+    border-right: 1px solid #666666;
+}
+
+.floor .floor-nav-list li:first-child a {
+    padding-left: 0px;
+}
+
+.floor .floor-nav-list li:last-child a {
+    padding-left: 10px;
+    padding-right: 0px;
+    border: 0px;
+}
+
+.floor .floor-info{
+
+}
+
+.floor .floor-info .item{
+    float: left;
+}
+
+.floor .floor-info .item1{
+    width: 230px;
+    height: 432px;
+    background-color: #F4F4F4;
+}
+.floor .floor-info .item2{
+    width: 340px;
+    height: 432px;
+    background-color: yellow;
+}
+.floor .floor-info .item3{
+    width: 206px;
+    height: 432px;
+    background-color: red;
+    border-right: 1px solid #E2E2E2 ;
+}
+.floor .floor-info .item4{
+    width: 206px;
+    height: 432px;
+    background-color: blue;
+    border-right: 1px solid #E2E2E2 ;
+}
+.floor .floor-info .item5{
+    width: 206px;
+    height: 432px;
+    background-color: aqua;
+}
+
+
+
+/* 樓層 */
