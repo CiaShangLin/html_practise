@@ -346,3 +346,21 @@ a {
 }
 
 /* 主內容區 */
+
+/* 秒殺 */
+
+.seckill{
+    margin-top: 10px;
+}
+.seckill img{
+    float: left;
+    margin-right: 11px;
+    /* 鼠標變化可以點擊 */
+    cursor: pointer;
+}
+
+.seckill img:last-child{
+    margin-right: 0px;
+}
+
+/* 秒殺 */
