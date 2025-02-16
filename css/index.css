@@ -486,3 +486,71 @@ a {
 }
 
 /* 樓層 */
+
+/* 頁腳 */
+.foot {
+    height: 440px;
+    background-color: #483E3E;
+    margin-top: 48px;
+}
+
+.foot .top-link {}
+
+.foot .top-link .link-list {
+    width: 190px;
+    height: 176px;
+    float: left;
+    margin-top: 48px;
+    margin-right: 10px;
+}
+
+.foot .top-link .link-list:last-child {
+    margin-right: 0px;
+}
+
+.link-list li a {
+    color: white;
+    font-size: 14px;
+}
+
+.foot .line {
+    height: 1px;
+    background-color: #584D4D;
+}
+
+.foot .bottom-link {
+    text-align: center;
+    margin-top: 47px;
+}
+
+.foot .bottom-link-list {
+    /* 配合上面的text-align讓它置中 */
+    display: inline-block;
+}
+
+.foot .bottom-link li {
+    float: left;
+}
+
+.foot .bottom-link-list li a {
+    padding: 0px 26px;
+    color: white;
+    border-right: #D9D9D9 1px solid;
+}
+
+.foot .bottom-link-list li:first-child a {
+    padding-left: 0px;
+}
+
+.foot .bottom-link-list li:last-child a {
+    border: 0px;
+    padding-right: 0px;
+}
+
+.foot .bottom-link .icp {
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+/* 頁腳 */
